@@ -1,19 +1,5 @@
 .idea
 
-app/node_modules
-app/.idea
-app/.expo-shared
-app/npm-debug.*
-app/*.jks
-app/*.p8
-app/*.p12
-app/*.key
-app/*.mobileprovision
-app/*.orig.*
-app/web-build/
-app/web-report/
-app/yarn.lock
-
 # macOS
 app/.DS_Store
 
