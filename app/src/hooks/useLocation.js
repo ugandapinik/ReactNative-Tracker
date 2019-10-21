@@ -28,6 +28,8 @@ export default (shouldTrack, callback) => {
       }
     };
 
+    // if user is recording, start watching position every second
+    // and use the callback to add positions to array of positions
     if (shouldTrack) {
       startWatching();
     } else {
@@ -35,16 +37,19 @@ export default (shouldTrack, callback) => {
         // remove allows us to stop tracking
         subscriber.remove();
       }
+      // clean the subscriber
       subscriber = null;
     }
 
+    // clean startWatching from first time
     return () => {
       if (subscriber) {
-        // remove allows us to stop tracking
         subscriber.remove();
       }
     };
-  }, [shouldTrack, callback]); // each time shouldTrack changes, rerun useEffect
+  }, [shouldTrack, callback]);
+  // each time shouldTrack changes or when we add change the callback
+  // rerun useEffect
 
   return [err];
 };

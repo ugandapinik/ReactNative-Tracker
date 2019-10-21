@@ -13,6 +13,7 @@ const locationReducer = (state, action) => {
     case 'change_name':
       return { ...state, name: action.payload };
     case 'reset':
+      // clean form and locations array once tracking and saving done
       return { ...state, name: '', locations: [] };
     default:
       return state;

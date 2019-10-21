@@ -23,4 +23,3 @@ export const { Provider, Context } = createDataContext(
   { fetchTracks, createTrack },
   []
 );
-

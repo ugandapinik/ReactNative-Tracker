@@ -30,11 +30,12 @@ const TrackCreateScreen = ({ isFocused }) => {
   );
 
   // shouldTrack in useLocation hook is equal to isFocused we receive from withNavigationFocus
+  // Use location checks if we record or not and returns errors if some are present
   const [err] = useLocation(isFocused || recording, callback);
 
   return (
     <SafeAreaView forceInset={{ top: 'always' }}>
-      <Text h2>Create a Track</Text>
+      <Text h2 style={styles.title}>Create a Track</Text>
       <Map />
       {err ? <Text>Please enable location services</Text> : null}
       <TrackForm />
@@ -47,7 +48,12 @@ TrackCreateScreen.navigationOptions = {
   tabBarIcon: <FontAwesome name="plus" size={20} />
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  title: {
+    textAlign: 'center',
+    margin: 10
+  }
+});
 
 // withNavigationFocus allows to access isFocused to know if the component is currently on the screen
 export default withNavigationFocus(TrackCreateScreen);

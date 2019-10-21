@@ -14,6 +14,7 @@ export default () => {
   const saveTrack = async () => {
     await createTrack(name, locations);
     reset();
+    // since we're outside react components we need this custom function to navigate the user
     navigate('TrackList');
   };
 
