@@ -1,7 +1,7 @@
 # react-native-tracker
 React Native Geoloc Tracking app (test)
 
-Location tracking app à la Strava (cheap version) in React Native with an Express/Node server based on [Stephen Grider's course on Udemy](The Complete React Native + Hooks Course [2019 Edition])
+Location tracking app à la Strava (cheap version) in React Native with an Express/Node server based on [Stephen Grider's course on Udemy](https://www.udemy.com/course/the-complete-react-native-and-redux-course/)
 
 More info on the dependencies and tools:
 
