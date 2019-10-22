@@ -4,7 +4,7 @@ import { AsyncStorage } from 'react-native';
 let url;
 if (__DEV__) {
   // change the URL each time you restart ngrok
-  url = 'http://4791c586.ngrok.io';
+  url = 'http://e33971e2.ngrok.io';
 } else {
   url = 'PROD_URL';
 }

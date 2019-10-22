@@ -1,3 +1,5 @@
+const keys = require ('../../config/keys');
+
 // token encryption
 const jwt = require('jsonwebtoken');
 
@@ -20,7 +22,7 @@ module.exports = (req, res, next) => {
   const token = authorization.replace('Bearer ', '');
 
   // verify with the secret key passed in the signup route
-  jwt.verify(token, 'MY_SECRET_KEY', async (err, payload) => {
+  jwt.verify(token, keys.serverKey, async (err, payload) => {
     if (err) {
       return res
         .status(401)

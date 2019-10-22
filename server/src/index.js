@@ -1,3 +1,5 @@
+const keys = require ('../config/keys');
+
 // Models (must be required before it is used, e.g. before authRoutes)
 require('./models/User');
 require('./models/Track');
@@ -24,7 +26,7 @@ app.use(trackRoutes);
 
 // create a mongo/mongoose instance
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://admin:passwordpassword@react-native-tracker-yxtkc.mongodb.net/test?retryWrites=true&w=majority';
+const mongoURI = keys.mongoURI;
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useCreateIndex: true,

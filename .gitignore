@@ -7,3 +7,4 @@ app/.DS_Store
 server/node_modules/**/*
 server/yarn.lock
 server/.idea
+server/config
