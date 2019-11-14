@@ -33,4 +33,4 @@ More info on the dependencies and tools:
 - Use of react-native-elements and FontAwesome for styling
 - use a _mocklocation file in order to simulate a user's path without having to walk around the block (test purposes)
 
-Feel freet to comment, PR, clone etc... in order to help me be a better noob :)
+Feel free to comment, PR, clone etc... in order to help me be a better noob :)
