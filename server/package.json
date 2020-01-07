@@ -11,7 +11,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.5",
     "ngrok": "^3.2.5",
-    "nodemon": "^1.19.4"
+    "nodemon": "^2.0.2"
   },
   "scripts": {
     "dev": "nodemon src/index.js"
